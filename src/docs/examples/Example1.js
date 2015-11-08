@@ -2,9 +2,9 @@ require('normalize.css');
 require('styles/App.css');
 
 import React from 'react/addons';
-import Popmotion from '../Popmotion';
+import Popmotion from '../../components/Popmotion';
 
-let yeomanImage = require('../../images/yeoman.png');
+let yeomanImage = require('../images/yeoman.png');
 
 class Example1Component extends React.Component {
   render() {

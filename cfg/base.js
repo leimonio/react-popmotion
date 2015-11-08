@@ -2,6 +2,7 @@ var path = require('path');
 
 var port = 8000;
 var srcPath = path.join(__dirname, '/../src');
+var docsPath = path.join(__dirname, '/../src/docs');
 var publicPath = '/assets/';
 
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
     publicPath: publicPath
   },
   devServer: {
-    contentBase: './src/',
+    contentBase: './src/docs/',
     historyApiFallback: true,
     hot: true,
     port: port,
@@ -24,7 +25,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
     alias: {
       components: srcPath + '/components/',
-      styles: srcPath + '/styles/'
+      styles: docsPath + '/styles/'
     }
   },
   module: {

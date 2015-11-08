@@ -2,10 +2,10 @@ require('normalize.css');
 require('styles/App.css');
 
 import React from 'react/addons';
-import PopmotionAction from '../PopmotionAction';
-import PopmotionActor from '../PopmotionActor';
+import PopmotionAction from './../../components/PopmotionAction';
+import PopmotionActor from './../../components/PopmotionActor';
 
-let yeomanImage = require('../../images/yeoman.png');
+let yeomanImage = require('../images/yeoman.png');
 
 class Example2Component extends React.Component {
   render() {
