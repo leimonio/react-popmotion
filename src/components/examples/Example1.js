@@ -2,14 +2,14 @@ require('normalize.css');
 require('styles/App.css');
 
 import React from 'react/addons';
-import PopmotionComponent from './PopmotionComponent';
+import Popmotion from '../Popmotion';
 
-let yeomanImage = require('../images/yeoman.png');
+let yeomanImage = require('../../images/yeoman.png');
 
-class AppComponent extends React.Component {
+class Example1Component extends React.Component {
   render() {
     return (
-        <PopmotionComponent
+        <Popmotion
             actorSelector=".index"
             actionType="Tween"
             values={ {y: 100} }
@@ -20,12 +20,12 @@ class AppComponent extends React.Component {
             <img src={yeomanImage} alt="Yeoman Generator" />
             <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
           </div>
-        </PopmotionComponent>
+        </Popmotion>
     );
   }
 }
 
-AppComponent.defaultProps = {
+Example1Component.defaultProps = {
 };
 
-export default AppComponent;
+export default Example1Component;

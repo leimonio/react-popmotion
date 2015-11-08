@@ -4,7 +4,8 @@
 [Popmotion](http://popmotion.io/) Javascript motion engine.
 
 # TODO:
- - move examples outside /src/ folder in a /docs/ folder
+ - Move examples outside /src/ folder in a /docs/ folder
+ - Write documentation
 
 # License
 Licensed under the MIT License: https://opensource.org/licenses/MIT
