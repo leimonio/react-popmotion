@@ -25,14 +25,14 @@ class PopmotionComponent extends React.Component {
 PopmotionComponent.displayName = 'PopmotionComponent';
 
 PopmotionComponent.propTypes = {
-    runOnMount      : React.PropTypes.boolean,
+    onLoad          : React.PropTypes.bool,
     children        : React.PropTypes.element.isRequired,
     actorSelector   : React.PropTypes.string,
     actionType      : React.PropTypes.oneOf(['Simulate', 'Track', 'Tween'])
 };
 
 PopmotionComponent.defaultProps = {
-    runOnMount      : false,
+    onLoad          : false,
     actorSelector   : null,
     actionType      : null
 };

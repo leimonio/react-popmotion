@@ -1,7 +1,7 @@
 {
   "name": "react-popmotion",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Popmotion - Your React way for Popmotion animation engine",
   "main": "",
   "scripts": {

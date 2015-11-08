@@ -15,7 +15,7 @@ class Example1Component extends React.Component {
             values={ {y: 100} }
             duration={600}
             delay={1000}
-            runOnMount={true}>
+            onLoad={true}>
           <div className="index">
             <img src={yeomanImage} alt="Yeoman Generator" />
             <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>

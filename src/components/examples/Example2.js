@@ -10,7 +10,7 @@ let yeomanImage = require('../../images/yeoman.png');
 class Example2Component extends React.Component {
   render() {
     return (
-      <PopmotionAction actionType="Tween" runOnMount={true} duration={600} delay={1000} values={ {y: 100} }>
+      <PopmotionAction actionType="Tween" onLoad={true} duration={600} delay={1000} values={ {y: 100} }>
         <PopmotionActor element=".actor-class">
           <div className="actor-class">Im the actor</div>
         </PopmotionActor>

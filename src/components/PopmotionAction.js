@@ -10,7 +10,7 @@ var _ = {
 class PopmotionActionComponent extends React.Component {
 
     render() {
-        return React.cloneElement(this.props.children, { action : this.action, runOnMount: this.props.runOnMount });
+        return React.cloneElement(this.props.children, { action : this.action, onLoad: this.props.onLoad });
     }
 
     componentWillMount() {
@@ -30,13 +30,13 @@ class PopmotionActionComponent extends React.Component {
 PopmotionActionComponent.displayName = 'PopmotionAction';
 
 PopmotionActionComponent.propTypes = {
-    runOnMount  : React.PropTypes.boolean,
+    onLoad      : React.PropTypes.bool,
     children    : React.PropTypes.element.isRequired,
-    actionType: React.PropTypes.oneOf(['Simulate', 'Track', 'Tween'])
+    actionType  : React.PropTypes.oneOf(['Simulate', 'Track', 'Tween'])
 };
 
 PopmotionActionComponent.defaultProps = {
-    runOnMount : false,
+    onLoad     : false,
     actionType : null
 };
 

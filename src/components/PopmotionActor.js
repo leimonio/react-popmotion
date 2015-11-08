@@ -14,7 +14,7 @@ class PopmotionActorComponent extends React.Component {
 
     componentDidMount() {
         this.actor = this._initializeActor();
-        if(this.props.runOnMount) {
+        if(this.props.onLoad) {
             this.runAnimation();
         }
     }
@@ -36,13 +36,13 @@ class PopmotionActorComponent extends React.Component {
 PopmotionActorComponent.displayName = 'PopmotionActor';
 
 PopmotionActorComponent.propTypes = {
-    runOnMount  : React.PropTypes.boolean,
-    action      : React.PropTypes.object.isRequired,
+    onLoad      : React.PropTypes.bool,
+    action      : React.PropTypes.object,
     children    : React.PropTypes.element.isRequired
 }
 
 PopmotionActorComponent.defaultProps = {
-    runOnMount  : false,
+    onLoad      : false,
     action      : null
 };
 
