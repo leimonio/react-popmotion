@@ -1,5 +1,4 @@
 import React from 'react/addons';
-import PopmotionUI from 'popmotion';
 import PopmotionAction from './PopmotionAction';
 import PopmotionActor from './PopmotionActor';
 

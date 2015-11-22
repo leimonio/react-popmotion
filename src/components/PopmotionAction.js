@@ -1,6 +1,5 @@
 import React from 'react/addons';
 import PopmotionUI from 'popmotion';
-import PopmotionActor from './PopmotionActor';
 
 var _ = {
     keys    : require('lodash/object/keys'),
