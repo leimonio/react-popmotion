@@ -18,9 +18,9 @@
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags"
   },
-  "repository": "",
-  "keywords": [],
-  "author": "Your name here",
+  "repository": "http://github.com/kwnccc/react-popmotion",
+  "keywords": ["react", "popmotion", "animation", "engine"],
+  "authors": ["Konstantinos Leimonis", "Maximilianos Panas"],
   "devDependencies": {
     "babel-core": "^5.8.22",
     "babel-loader": "^5.3.2",
@@ -57,5 +57,6 @@
     "popmotion": "^3.4.0",
     "react": "^0.13.3",
     "sass-loader": "^1.0.1"
-  }
+  },
+  "license" : "MIT License"
 }
