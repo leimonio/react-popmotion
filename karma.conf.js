@@ -25,9 +25,9 @@ module.exports = function(config) {
       mocha: {}
     },
     singleRun: true,
-    reporters: ['mocha'],
+    reporters: ['mocha', 'coverage'],
     preprocessors: {
-      'test/run.js': ['webpack', 'sourcemap']
+      'test/run.js': ['webpack', 'coverage', 'sourcemap']
     },
     webpack: webpackCfg,
     webpackServer: {
